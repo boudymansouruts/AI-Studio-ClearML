@@ -14,12 +14,12 @@ logger = Logger.current_logger()
 
 # Arguments
 args = {
-    'dataset_task_id': 'e5d87ceb1090414b889b91d8a7e3ea01',
+    'dataset_task_id': '83dcef4b7d8f42629ee8a101ce634ef7',
 }
 task.connect(args)
 
 # only create the task, we will actually execute it later
-# task.execute_remotely()
+task.execute_remotely()
 
 print('Retrieving Iris dataset')
 dataset_task = Task.get_task(task_id=args['dataset_task_id'])
